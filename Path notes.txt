@@ -1,0 +1,12 @@
+version 0.2.0
+Huge update!
+-Program execution time for one year is now around 1000sec, down from 3000/5000 sec for one year (each subsequent year the slowdown increases exponentially).
+The reason is the program no longer creates a giant dataframe in itself. The program now creates smaller parts which are easier to manage.
+ADDED:
+calculate_years_between()
+-Function is responsible for caculate number of years beetwen two dates.
+marge_csv_files()
+-Function performs final dataframe with all records from chosen year. I will add it in the next version possibility to delate files.
+
+version 0.1.0
+Shortened scrap_and_convert_into_csv() execution time by adding comprehension into merge_lists() instead of normal loop.
